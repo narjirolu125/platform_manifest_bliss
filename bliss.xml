@@ -237,7 +237,7 @@
   <project path="packages/apps/OmniStyle" name="platform_packages_apps_OmniStyle" remote="BlissRoms" />
   <project path="packages/apps/WallpaperPicker2" name="platform_packages_apps_WallpaperPicker2" remote="BlissRoms" />
   <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="BlissRoms" />
-  <project path="packages/apps/XiaomiParts" name="packages_apps_XiaomiParts" remote="dump" 5~/>
+  <project path="packages/apps/XiaomiParts" name="packages_apps_XiaomiParts" remote="dump" />
 
   <!-- External -->
   <project path="external/asus/stitchimage" name="platform_external_asus_stitchimage" remote="BlissRoms" />
