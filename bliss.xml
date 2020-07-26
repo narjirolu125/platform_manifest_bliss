@@ -19,10 +19,6 @@
   <remote name="gitlab"
           fetch="https://gitlab.com/" />
 
-  <remote name="arrow"
-          fetch="https://github.com/ArrowOS"
-          sync-j="16" />
-
   <remote name="los"
           fetch="https://github.com/LineageOS"
           revision="lineage-17.1" />
@@ -329,17 +325,10 @@
   <project path="vendor/support" name="platform_vendor_support" remote="BlissRoms" />
   <project path="vendor/themes" name="platform_vendor_themes" remote="BlissRoms" />
 
-  <!-- msm8998 hals -->
-  <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" remote="arrow" revision="arrow-10.0-caf-8998"/>
-  <project path="hardware/qcom-caf/msm8998/media" name="android_hardware_qcom_media" remote="arrow" revision="arrow-10.0-caf-8998"/>
-  <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom_display" remote="arrow" revision="arrow-10.0-caf-8998"/>
-
-
   <!-- Lavender -->
   <project path="device/xiaomi/sdm660-common" name="device_xiaomi_sdm660-common" remote="dump" />
   <project path="device/xiaomi/lavender" name="device_xiaomi_lavender" remote="dump" />
   <project path="vendor/xiaomi/sdm660-common" name="vendor_xiaomi_sdm660-common" remote="dump" />
   <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="dump" />
   <project path="kernel/xiaomi/lavender" name="kernel_xiaomi_lavender" remote="dump" />
-
 </manifest>
