@@ -23,11 +23,11 @@
           fetch="https://github.com/LineageOS"
           revision="lineage-17.1" />
 
-  <remote  name="dump"
-           fetch="https://github.com/narg-dump" />
+  <remote name="dump"
+          fetch="https://github.com/narg-dump" />
 
-  <remote  name="narg"
-           fetch="https://github.com/narjirolu125" />
+  <remote name="narg"
+          fetch="https://github.com/narjirolu125" />
 
   <!-- Remove first some AOSP repos -->
   <remove-project name="platform/art" />
@@ -326,9 +326,9 @@
   <project path="vendor/themes" name="platform_vendor_themes" remote="BlissRoms" />
 
   <!-- Lavender -->
-  <project path="device/xiaomi/sdm660-common" name="device_xiaomi_sdm660-common" remote="dump" />
-  <project path="device/xiaomi/lavender" name="device_xiaomi_lavender" remote="dump" />
-  <project path="vendor/xiaomi/sdm660-common" name="vendor_xiaomi_sdm660-common" remote="dump" />
-  <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="dump" />
-  <project path="kernel/xiaomi/lavender" name="kernel_xiaomi_lavender" remote="dump" />
+  <project path="device/xiaomi/sdm660-common" name="device_xiaomi_sdm660-common" remote="dump" revision="bliss-10" />
+  <project path="device/xiaomi/lavender" name="device_xiaomi_lavender" remote="dump" revision="bliss-10" />
+  <project path="vendor/xiaomi/sdm660-common" name="vendor_xiaomi_sdm660-common" remote="dump" revision="aosip-10" />
+  <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="dump" revision="aosip-10" />
+  <project path="kernel/xiaomi/lavender" name="kernel_xiaomi_lavender" remote="dump" revision="aosip-10" />
 </manifest>
