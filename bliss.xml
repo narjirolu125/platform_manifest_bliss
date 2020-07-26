@@ -27,6 +27,12 @@
           fetch="https://github.com/LineageOS"
           revision="lineage-17.1" />
 
+  <remote  name="dump"
+           fetch="https://github.com/narg-dump" />
+
+  <remote  name="narg"
+           fetch="https://github.com/narjirolu125" />
+
   <!-- Remove first some AOSP repos -->
   <remove-project name="platform/art" />
   <remove-project name="platform/build" />
@@ -187,7 +193,7 @@
   <!-- End Remove AOSP repos -->
 
   <!-- Begin BlissRoms repos -->
-  <project path="manifest" name="platform_manifest" remote="BlissRoms" />
+  <project path="manifest" name="platform_manifest_bliss" remote="narg" />
   <project path="art" name="platform_art" remote="BlissRoms" />
   <project path="build/make" name="platform_build_make" remote="BlissRoms" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -231,6 +237,7 @@
   <project path="packages/apps/OmniStyle" name="platform_packages_apps_OmniStyle" remote="BlissRoms" />
   <project path="packages/apps/WallpaperPicker2" name="platform_packages_apps_WallpaperPicker2" remote="BlissRoms" />
   <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="BlissRoms" />
+  <project path="packages/apps/XiaomiParts" name="packages_apps_XiaomiParts" remote="dump" 5~/>
 
   <!-- External -->
   <project path="external/asus/stitchimage" name="platform_external_asus_stitchimage" remote="BlissRoms" />
@@ -326,5 +333,13 @@
   <project path="hardware/qcom-caf/msm8998/audio" name="android_hardware_qcom_audio" remote="arrow" revision="arrow-10.0-caf-8998"/>
   <project path="hardware/qcom-caf/msm8998/media" name="android_hardware_qcom_media" remote="arrow" revision="arrow-10.0-caf-8998"/>
   <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom_display" remote="arrow" revision="arrow-10.0-caf-8998"/>
+
+
+  <!-- Lavender -->
+  <project path="device/xiaomi/sdm660-common" name="device_xiaomi_sdm660-common" remote="dump" />
+  <project path="device/xiaomi/lavender" name="device_xiaomi_lavender" remote="dump" />
+  <project path="vendor/xiaomi/sdm660-common" name="vendor_xiaomi_sdm660-common" remote="dump" />
+  <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="dump" />
+  <project path="kernel/xiaomi/lavender" name="kernel_xiaomi_lavender" remote="dump" />
 
 </manifest>
